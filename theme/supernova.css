@@ -1,3 +1,30 @@
+a {
+	color: #0870D1;
+}
+a:hover{
+	color: #0A8EE6;
+}
+a.forumtitle{
+	color: #0f5493;
+	}
+a.forumtitle:hover {
+    color: #1472c9;
+    text-decoration:underline;
+}
+a:link, a:visited {
+    color: #105289;
+}
+
+.inputbox:focus {
+    border-color: #11A3EA;
+    color: #0f4987;
+}
+
+#message-box textarea {
+    color: #333333;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+}
 
 .notification_list {
     z-index: 2;
@@ -41,6 +68,7 @@ li.row:hover{
 
 a.header-avatar span:after {
     padding-top: 10px;
+    padding-left: 3px;
 }
 
 .badge {
@@ -155,7 +183,7 @@ div#page-header {
     color: #0870d1;
     font-weight: bold;
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: -0.5px;
@@ -172,6 +200,7 @@ div#page-header {
 
 ul#nav-main li {
     line-height: 3.2em;
+    padding-top: 3px;
 }
 
 .nav-breadcrumbs {}
@@ -185,6 +214,9 @@ ul#nav-main li {
     font-family: Verdana, Geneva, sans-serif;
     color: #0870D1;
     font-size: 12px;
+}
+.navbar-wrap a:hover, .nav-main a:hover {
+    color: #0A8EE6;	
 }
 
 .sn-index-icon {
@@ -385,8 +417,8 @@ ul#nav-main li {
     color: #fff;
 }
 
-.action-bar .btn:hover {
-    text-shadow: 0 0 10px #FFFFFF, 0 0 0 #FFFFFF, 0 0 0px rgba(188, 42, 77, 0.2);
+.action-bar .btn:hover, .action-bar .btn:focus {
+    text-shadow: 0 7px 10px #FFFFFF, 0 0 0 #FFFFFF, 0 0 0px rgba(188, 42, 77, 0.2);
 }
 
 .btn.button:hover .icon {
@@ -414,6 +446,14 @@ a.button1, input.button1 {
 	color: #055F9A;
 }
 
+.button:hover, a.button1:hover, input.button1:hover, input.button3:hover, a.button2:hover, input.button2:hover
+{
+	border-color: #055f9a;
+	backdrop-filter: none;
+	background-image: url(./images/blue/buttonbg.png);
+	border-color: #055f9a;
+	color: #174764;
+}
 .content h2, .panel h2 {
     color: #115098;
     border-bottom-color: #CCCCCC;
@@ -429,6 +469,10 @@ label {
 
 .bg2 {
     background-color: #e1eff7;
+}
+
+.reported {
+    background-color: #F7ECEF;
 }
 
 blockquote {
@@ -456,7 +500,7 @@ blockquote blockquote blockquote {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
 }
 
-.btn-blue .icon {
+.btn-blue .icon, .btn-blue:hover .icon {
 	color: #4bb4fe;
 }
 
@@ -469,8 +513,17 @@ blockquote blockquote blockquote {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffffd', endColorstr='#fcfcd3',GradientType=0 ); /* IE6-9 */
 }
 
-.btn-yellow .icon {
+.btn-yellow .icon, .btn-yellow:hover .icon {
 	color: #ceb800;
+}
+.post-buttons .button:hover.btn-yellow {
+    background-image: none;
+    border-color: #a79501;
+    background: #fffffd; /* Old browsers */
+    background: -moz-linear-gradient(top, #fffffd 0%, #fcfcd3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fffffd 0%,#fcfcd3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fffffd 0%,#fcfcd3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffffd', endColorstr='#fcfcd3',GradientType=0 ); /* IE6-9 */
 }
 
 .btn-green {
@@ -482,8 +535,18 @@ blockquote blockquote blockquote {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfffc', endColorstr='#bdffbd',GradientType=0 ); /* IE6-9 */
 }
 
-.btn-green .icon {
+.btn-green .icon, .btn-green:hover .icon {
 	color: #00d400;
+}
+
+.post-buttons .button:hover.btn-green {
+    background-image: none;
+    border-color: #018e01;
+    background: #fcfffc;
+    background: -moz-linear-gradient(top, #fcfffc 0%, #bdffbd 100%);
+    background: -webkit-linear-gradient(top, #fcfffc 0%,#bdffbd 100%);
+    background: linear-gradient(to bottom, #fcfffc 0%,#bdffbd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfffc', endColorstr='#bdffbd',GradientType=0 );
 }
 
 .btn-red {
@@ -495,7 +558,17 @@ blockquote blockquote blockquote {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfd', endColorstr='#eed9dc',GradientType=0 ); /* IE6-9 */
 }
 
-.btn-red .icon {
+.post-buttons .button:hover.btn-red {
+	border-color:#710101;
+	background: #fefdfd; /* Old browsers */
+	background: -moz-linear-gradient(top, #fefdfd 0%, #eed9dc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fefdfd 0%,#eed9dc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fefdfd 0%,#eed9dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfd', endColorstr='#eed9dc',GradientType=0 ); /* IE6-9 */
+}
+
+
+.btn-red .icon, .btn-red:hover .icon {
 	color: #b40000;
 }
 
@@ -611,7 +684,7 @@ select {
 }
 @media (max-width: 500px) {
 .quick-links .dropdown-trigger .icon {
-    margin-left: 15px;
+    margin-left: 3px;
 }
 }
 
@@ -667,4 +740,49 @@ select {
     background-repeat: no-repeat;
     padding: 9px;
     background-position: center;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer {
+    background: #f4f4f4;
+}
+
+.dropdown-extended .pointer-inner {
+    border-color: #f4f4f4 transparent;
+}
+
+.jumpbox-cat-link {
+    background: #1c9cf9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1c9cf9 0%, #0f5390 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1c9cf9 0%,#0f5390 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1c9cf9 0%,#0f5390 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c9cf9', endColorstr='#0f5390',GradientType=0 ); /* IE6-9 */
+    border-top-color: #0076B1;
+    color: #FFFFFF !;
+}
+
+.jumpbox-sub-link {
+    background-color: #e1eff7;
+}
+.jumpbox-cat-link span {
+	color: #fff;
+}
+.button.btn:hover {
+    background-image: url("./images/blue/button.png");
+	color: #fff;
+}
+table.table1 thead th, table.table1 thead th a {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+#cp-main h2 {
+    color: #333333;
+}
+
+.minitabs .tab > a:hover {
+    color: #0A81D0;
+}
+
+.minitabs .activetab > a:hover {
+    color: #333333;
 }
