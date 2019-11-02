@@ -116,6 +116,7 @@ li.header dd, li.header dt {
     font-size: 1em;
 }
 
+
 ul.topiclist dd {
     border-left-color: #DCDCDC;
 }
@@ -261,6 +262,13 @@ ul#nav-main li {
 
 .online-list, .birthday-list, .statistics, .permissions {
     padding-left: 40px;
+}
+
+.sn-forum-description {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #838383;
+    line-height: 14px;
 }
 
 .sn-cat-header {
@@ -785,4 +793,8 @@ table.table1 thead th, table.table1 thead th a {
 
 .minitabs .activetab > a:hover {
     color: #333333;
+}
+.ucp-main .header a, .mcp-main .header a {
+	text-shadow: 1px 1px 3px #000;
+	font-weight: normal;
 }

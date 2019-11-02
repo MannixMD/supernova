@@ -123,28 +123,6 @@
 {$SCRIPTS}
 
 <!-- EVENT overall_footer_body_after -->
-	<script>
-	var colorswitch = $.cookie('SAcolor');
-	if (colorswitch == 'green') {
-	    $('head').append('<link href="{T_THEME_PATH}/css/green.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">');
-};
-	if (colorswitch == 'red') {
-		$('head').append('<link href="{T_THEME_PATH}/css/red.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">');
-};
-$(document).ready(function(){
-  $("#btn1").click(function(){
-    $('head').append('<link href="{T_THEME_PATH}/css/green.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">');
-  $.cookie('SAcolor', 'green', { path: '/' });
-  });
-  $("#btn2").click(function(){
-    $('head').append('<link href="{T_THEME_PATH}/css/red.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">');
-  $.cookie('SAcolor', 'red', { path: '/' });
-  });
-    $("#btn3").click(function(){
-    $('head').append('<link href="{T_THEME_PATH}/css/blue.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">');
-  $.cookie('SAcolor', null, { path: '/' });
-  });
-});
-</script>	
+	
 </body>
 </html>
