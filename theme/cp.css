@@ -300,7 +300,7 @@ ol.def-rules li {
 	padding: 0 3px;
 }
 
-+/* DEPRECATED 3.2.6
+/* DEPRECATED 3.2.6
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
 	border-left-color: transparent;
 	border-right-color: transparent;
